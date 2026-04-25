@@ -1,0 +1,294 @@
+============================================
+ CVA6 Grey-Box Hardware Fuzzer
+ Group 7 - EEE6323 - University of Florida
+ Server: ece-lnx-09
+============================================
+============================================================
+ CVA6 Grey-Box Hardware Fuzzer - Group 7 EEE6323
+ MAX_ITER=10  GOAL=60.0%
+ UCDB feedback: ENABLED (vcover)
+ Started: 2026-04-14 20:08:40
+============================================================
+
+============================================================
+ ITER 1/10 | Strategy: random_mix | Best: 0.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+25.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] PROMOTION +25.0%
+[ANALYZE] RTL block: unknown(branch_cg) -> strategy: random_mix (priority=1.00)
+[ANALYZE] UCDB-guided -> random_mix
+
+============================================================
+ ITER 2/10 | Strategy: random_mix | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> always_not_taken
+
+============================================================
+ ITER 3/10 | Strategy: always_not_taken | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> data_dependent_branch
+
+============================================================
+ ITER 4/10 | Strategy: data_dependent_branch | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> store_buffer_fill
+
+============================================================
+ ITER 5/10 | Strategy: store_buffer_fill | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> deliberate_ecall
+
+============================================================
+ ITER 6/10 | Strategy: deliberate_ecall | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> mixed_coverage
+
+============================================================
+ ITER 7/10 | Strategy: mixed_coverage | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> mispredict_force
+
+============================================================
+ ITER 8/10 | Strategy: mispredict_force | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> store_buffer_fill
+
+============================================================
+ ITER 9/10 | Strategy: store_buffer_fill | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> mixed_coverage
+
+============================================================
+ ITER 10/10 | Strategy: mixed_coverage | Best: 25.0%
+============================================================
+[HEX] 511 instructions -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/sim_input.hex
+[GEN] 511 instrs | JAL=0
+[SIM] Launching Questa vsim...
+
+[COV] Coverage Results:
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+  TOTAL        [#####---------------] 25.0%
+[COV] retired=1 | cycles=100000 | improvement=+0.0%
+
+[UCDB] Parsing: /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb
+[UCDB] Exists: True
+[PARSE] 10 unhit bins from UCDB (vcover)
+[ANALYZE] Targets:
+  [1.00] unknown(branch_cg) strategy=random_mix
+  [1.00] unknown(store_cg) strategy=random_mix
+  [1.00] unknown(except_cg) strategy=random_mix
+
+[CONTROLLER] ROLLBACK
+[ANALYZE] UCDB-guided -> random_mix
+[ANALYZE] Fallback -> random_mix
+
+============================================================
+ FUZZER COMPLETE - Best: 25.0%
+  branch_cg    [--------------------] 0.0%
+  store_cg     [##########----------] 50.0%
+  except_cg    [#####---------------] 25.0%
+
+ iter strategy                  total%  bins  retird action
+ ------------------------------------------------------------
+  + 01  random_mix                 25.0%   10      1   improved
+  - 02  random_mix                 25.0%   10      1   rollback
+  - 03  always_not_taken           25.0%   10      1   rollback
+  - 04  data_dependent_branch      25.0%   10      1   rollback
+  - 05  store_buffer_fill          25.0%   10      1   rollback
+  - 06  deliberate_ecall           25.0%   10      1   rollback
+  - 07  mixed_coverage             25.0%   10      1   rollback
+  - 08  mispredict_force           25.0%   10      1   rollback
+  - 09  store_buffer_fill          25.0%   10      1   rollback
+  - 10  mixed_coverage             25.0%   10      1   rollback
+============================================================
+[FUZZER] Results  -> /home/UFAD/atish.maragur/FUZZER_PROJECT/results/fuzzer_results.json
+[FUZZER] Best hex -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/best_input.hex
+[FUZZER] UCDB     -> /home/UFAD/atish.maragur/FUZZER_PROJECT/sim_work/coverage.ucdb

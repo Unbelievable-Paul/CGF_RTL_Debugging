@@ -1,0 +1,6 @@
+define XMSIMRC	( /apps/cds/xcelium2409/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+define AMSRC	( /apps/cds/xcelium2409/tools/xcelium/files/amsrc, ~/.amsrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.cva6_snapshot:sv
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )

@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sv
+-INCDIR
+rtl/cva6/core/include
+-INCDIR
+rtl/cva6/core/cvfpu/src/common_cells/include
+-INCDIR
+rtl/cva6/vendor/pulp-platform/axi/include
+-INCDIR
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/src
+-INCDIR
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/include
+-INCDIR
+rtl/cva6/vendor/pulp-platform/common_cells/include
+-SNAPSHOT
+cva6_snapshot

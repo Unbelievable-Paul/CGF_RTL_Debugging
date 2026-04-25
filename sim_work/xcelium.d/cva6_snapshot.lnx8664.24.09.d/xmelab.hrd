@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-COVERAGE
+all
+-COVFILE
+scripts/coverage.ccf
+-ACCESS
++rwc
+-timescale
+1ns/1ps

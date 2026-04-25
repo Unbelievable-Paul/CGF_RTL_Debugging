@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+sim_work/xcelium.d/AMSD
+-XMLIBDIRNAME
+sim_work/xcelium.d
+-COVERAGE
+all
+-COVFILE
+scripts/coverage.ccf
+-ACCESS
++rwc
+-timescale
+1ns/1ps
+-no_analogsolver
+-MESSAGES
+-dms_perf
+-XLMODE
+sim_work/xcelium.d/cva6_snapshot.lnx8664.24.09.d
+-RUNMODE
+-CDSLIB
+sim_work/xcelium.d/cva6_snapshot.lnx8664.24.09.d/cds.lib
+-HDLVAR
+sim_work/xcelium.d/cva6_snapshot.lnx8664.24.09.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

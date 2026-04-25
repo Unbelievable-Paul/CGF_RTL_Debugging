@@ -1,0 +1,43 @@
+<session version="1.1" release="W-2024.09-SP1" timestp="2026-04-16 20:47:19 GMT">
+  <info>
+    <attr name="datetime" value="Thu Apr 16 16:47:25 2026
+"/>
+    <attr name="command" value="urg -dir sim_work/coverage.vdb -format text -report sim_work/urg_report"/>
+    <attr name="top_instance" value="testbench"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="3867/10181" />
+    <metric name="Cond" value="13277/40860" />
+    <metric name="Toggle" value="1128/694396" />
+    <metric name="FSM" value="0/154" />
+    <metric name="Branch" value="4880/12561" />
+    <metric name="Group" value="93.3333%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="testbench::cg_exception">
+      <metric name="Group" value="80%" />
+    </scope>
+    <scope type="group" name="testbench::cg_branch">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="testbench::cg_store_buf">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

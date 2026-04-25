@@ -1,0 +1,737 @@
+20       
+0 common_cells/registers.svh
+0 /apps/syn/vcs/current/etc/systemverilog/common_cells/registers.svh
+0 rtl/cva6/core/include/common_cells/registers.svh
+0 hpdcache_typedef.svh
+0 /apps/syn/vcs/current/etc/systemverilog/hpdcache_typedef.svh
+0 rtl/cva6/core/include/hpdcache_typedef.svh
+0 rtl/cva6/core/cvfpu/src/common_cells/include/hpdcache_typedef.svh
+0 rtl/cva6/vendor/pulp-platform/axi/include/hpdcache_typedef.svh
+0 rvfi_types.svh
+0 /apps/syn/vcs/current/etc/systemverilog/rvfi_types.svh
+0 cvxif_types.svh
+0 /apps/syn/vcs/current/etc/systemverilog/cvxif_types.svh
+0 axi/assign.svh
+0 /apps/syn/vcs/current/etc/systemverilog/axi/assign.svh
+0 rtl/cva6/core/include/axi/assign.svh
+0 rtl/cva6/core/cvfpu/src/common_cells/include/axi/assign.svh
+0 axi/typedef.svh
+0 /apps/syn/vcs/current/etc/systemverilog/axi/typedef.svh
+0 rtl/cva6/core/include/axi/typedef.svh
+0 rtl/cva6/core/cvfpu/src/common_cells/include/axi/typedef.svh
+289
++define+DISABLE_ASSERTIONS
++define+SYNTHESIS
++define+XSIM
++error+30
++incdir+rtl/cva6/core/cache_subsystem/hpdcache/rtl/include
++incdir+rtl/cva6/core/cvfpu/src/common_cells/include
++incdir+rtl/cva6/core/include
++incdir+rtl/cva6/vendor/pulp-platform/axi/include
++incdir+rtl/cva6/vendor/pulp-platform/common_cells/include
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/apps/syn/vcs/current/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /apps/syn/vcs/current/linux64/lib/libvirsim.so /apps/syn/vcs/current/linux64/lib/liberrorinf.so /apps/syn/vcs/current/linux64/lib/libsnpsmalloc.so /apps/syn/vcs/current/linux64/lib/libvfs.so
+-Mout=sim_work/simv
+-Msaverestoreobj=/apps/syn/vcs/current/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/apps/syn/vcs/current/include
+-Mxllcflags=
+-Xfile_begin_f=sim_work/files.f
+-Xfile_end
+-full64
+-gen_obj
+-o sim_work/simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-top
+/apps/syn/vcs/current/linux64/bin/vcs1
+sim_work/simv
+testbench
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/config_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/riscv_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/build_config_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/ariane_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/wt_cache_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/std_cache_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/ecc_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/acc_dispatcher.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/alu.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/amo_buffer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ariane_regfile_ff.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ariane_regfile.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/axi_shim.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/branch_unit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/amo_alu.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/axi_adapter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cache_ctrl.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_icache.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_1hot_to_binary.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_resize.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_decoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_lfsr.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_flush.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_plru.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_random.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_sel.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_op_hpdcache_params_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/miss_handler.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/std_cache_subsystem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/std_nbdcache.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/tag_cmp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_axi_adapter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_cache_subsystem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_ctrl.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_mem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_missunit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/commit_stage.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/compressed_decoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/controller.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/csr_buffer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/csr_regfile.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_accel_first_pass_decoder_stub.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_fifo_v3.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_mmu.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_ptw.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_shared_tlb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_tlb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/counter_properties.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/fall_through_register_properties.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/fifo_v3_properties.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/addr_decode.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/binary_to_gray.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cb_filter_pkg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cb_filter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_2phase.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_fifo_2phase.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_fifo_gray.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/clk_div.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/counter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/delta_counter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_detect.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator_rx.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator_tx.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/exp_backoff.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/fall_through_register.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/fifo_v3.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/gray_to_binary.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/id_queue.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/isochronous_spill_register.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr_16bit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr_8bit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lzc.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/max_counter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/mv_filter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/onehot_to_bin.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/plru_tree.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/popcount.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rr_arb_tree.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rstgen_bypass.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rstgen.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/serial_deglitch.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/shift_reg.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/spill_register.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_arbiter_flushable.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_arbiter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_delay.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fifo.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_filter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fork_dynamic.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fork.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_intf.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_join.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_mux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_omega_net.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_register.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_to_mem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_xbar.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sub_per_hash.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sync.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sync_wedge.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/unread.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_cast_multi.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_classifier.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_divsqrt_multi.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_fma_multi.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_fma.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_noncomp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_block.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_fmt_slice.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_multifmt_slice.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_rounding.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_top.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_compressed_if_driver.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_fu.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_issue_register_commit_if_driver.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/decoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ex_stage.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/fpu_wrap.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/bht.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/btb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/frontend.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/instr_queue.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/instr_scan.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/ras.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/id_stage.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/instr_realign.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/issue_read_operands.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/issue_stage.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/load_unit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/lsu_bypass.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/macro_decoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/multiplier.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/mult.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/perf_counters.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp_data_if.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp_entry.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/scoreboard.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/serdiv.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/store_buffer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/zcmt_decoder.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_burst_splitter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc_dst.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc_src.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cut.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_delayer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_converter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_downsizer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_upsizer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_remap.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_serialize.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_intf.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_isolate.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_iw_converter.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_join.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_demux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_join.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_mailbox.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_mux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_regs.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_to_apb.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_to_axi.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_xbar.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_modify_address.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_multicut.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_mux.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_serializer.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_sim_mem.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/cc_onehot.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/isochronous_4phase_handshake.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/tc_pwr.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/store_unit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/load_store_unit.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/common/local/util/sram_cache.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/tb/stubs.sv
+/home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+157
+ZOIXHOME=/apps/syn/zoix
+XMODIFIERS=@im=ibus
+XLIB_SKIP_ARGB_VISUALS=1
+XDG_SESSION_ID=1508
+XDG_RUNTIME_DIR=/run/user/753064997
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/UFAD/atish.maragur/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=GNOME
+XCELIUM_INCISIVE_MERGEOPTS=1
+XCELIUM_HOME=/apps/cds/xcelium2309
+WAVEVIEW_HOME=/apps/syn/wv
+VTE_VERSION=5204
+VOLTUS_HOME=/apps/cds/ssv231
+VNCDESKTOP=ece-lnx-04:38 (atish.maragur)
+VMR_MODE_FLAG=64
+VERISIUM_HOME=/apps/cds/verisium2409
+VERDI_HOME=/apps/syn/verdi/current
+VC_STATIC_HOME=/apps/syn/vc-static/V-2023.12-SP2
+VCS_PYTHON3=/apps/syn/vcs/current/linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/apps/syn/vcs/current
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_HOME=/apps/syn/vcs/uvm/1.2
+UNAME=/bin/uname
+TSUPREM4_HOME=/apps/syn/taurus-tsuprem4
+TOOL_HOME=/apps/syn/vcs/current/linux64
+TMAX_HOME=/apps/syn/tmax
+TMALD_LICENSE_FILE=27000@licsvr.ece.ufl.edu
+TESSENT_HOME=/apps/mgc/tessent
+TCLLIBPATH=/apps/oascript/Si2oaScript-v3.4/tcl
+TCAD_HOME=/apps/syn/sentaurus/V-2023.09
+TANNER_PATH=/apps/mgc/tanner
+SYSTEM_CDS_LIB_DIR=/apps/cds/IC618/share/cdssetup
+SYN_3DIC_HOME=/apps/syn/3dic/V-2023.12
+SYNPLIFY_HOME=/apps/syn/synplify
+SYNOPSYS_SYN=/apps/syn/synthesis
+SYNOPSYS_SIM=/apps/syn/vcs/current
+SYNOPSYS_LC_ROOT=/apps/syn/lc/bin
+SYNOPSYS_HOME=/apps/syn
+STRATUS_HOME=/apps/cds/stratus182
+STARRC_HOME=/apps/syn/starrc/V-2023.12-SP5-1
+SSH_TTY=/dev/pts/42
+SSH_CONNECTION=10.227.232.183 48706 10.227.232.187 22
+SSH_CLIENT=10.227.232.183 48706 22
+SSH_AUTH_SOCK=/run/user/753064997/keyring/ssh
+SSH_AGENT_PID=59347
+SPYGLASS_HOME=/apps/syn/ufe_optional_spyglass-vcs/current/SPYGLASS_HOME
+SPECTRE_HOME=/apps/cds/spectre211
+SNPS_VCS_PYTHON3=/apps/syn/vcs/current/linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/apps/syn/vcs/current/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SKIP_CDS_DIALOG=
+SIGRITY_EDA_DIR=/apps/cds/sigrity20211
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/59230,unix/unix:/tmp/.ICE-unix/59230
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUBYLIB=/apps/oascript/Si2oaScript-v3.4/ruby
+RTLA_HOME=/apps/syn/rtla/current
+RSOFT_PROGRAMPATH=/apps/syn/photonicsolutions/2023.03-SP1-1/rsoft/bin
+RC_HOME=/apps/cds/rc142
+QUANTUS_HOME=/apps/cds/quantus221
+QT_X11_NO_MITSHM=1
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+QRC_HOME=/apps/cds/ext171
+QF_LD_LIBRARY_PATH=/apps/cds/modus211/oa_v22.60.s006/lib/linux_rhel60_64/opt
+PRIMETIME_HOME=/apps/syn/prime/current
+POWERPRO_HOME=/apps/mgc/powerpro
+PHOTONIC_SOLUTIONS_VERSION=2023.03-SP1-1
+PHOTONICS_SOLUTIONS_VERSION=2023.03-SP1-1
+PHOTONICS_SOLUTIONS_ROOT=/apps/syn/photonicsolutions
+PERL5LIB=/apps/oascript/Si2oaScript-v3.4/perl5
+OVA_UUM=0
+OPTO_LINK_BASE=/apps/syn/photonicsolutions/2023.03-SP1-1/optodesigner
+NOVAS_LD_LIBRARY_PATH=/apps/mgc/powerpro/powerpro/platform/linux64/lib
+NANOTIME_HOME=/apps/syn/nt
+NANOSIM_HOME=/apps/syn/ns
+MW_HOME=/apps/syn/mw
+MODUS_HOME=/apps/cds/modus211
+MODELSIM_HOME=/apps/mgc/modelsim/modeltech
+MMSIMHOME=/apps/cds/mmsim131
+MGLS_LICENSE_FILE=1717@ece-itop-licsvr.ece.ufl.edu
+MGC_HOME=/apps/mgc/calibre/aoj_cal_2024.2_36.24
+MEDICI_HOME=/apps/syn/medici
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LEDA_RESOURCES=/apps/syn/leda/resources
+LEDA_PATH=/apps/syn/leda
+LEDA_CONFIG=/apps/syn/leda/rules
+LC_HOME=/apps/syn/lc
+LC_ALL=C
+KRB5CCNAME=KEYRING:persistent:753064997
+JG_HOME=/apps/cds/jasper/2024.09
+INNOVUSHOME=/apps/cds/innovus211
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICV_HOME=/apps/syn/icv
+ICVWB_HOME=/apps/syn/icv_workbench
+ICC_HOME=/apps/syn/icc/V-2023.12-SP4
+ICC2_HOME=/apps/syn/icc2/V-2023.12-SP4
+HSPICE_HOME=/apps/syn/hspice
+HPEESOF_DIR=/apps/ads
+HISTCONTROL=ignoredups
+HFSS_HOME=/apps/ansys/AnsysEM2023/v231
+HERCULES_HOME=/apps/syn/hercules
+GPDK_DIR=/apps/cds/IC618/local/GPDK180
+GNOME_TERMINAL_SERVICE=:1.144
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/5fa9902d_a251_4751_831a_b1db65a77f8e
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GENUSHOME=/apps/cds/genus211
+FPDK_DIR=/apps/cds/IC618/local/FreePDK45
+FORMALITY_HOME=/apps/syn/formality
+FINESIM_HOME=/apps/syn/finesim
+FC_HOME=/apps/syn/fusioncompiler/V-2023.12
+EXT_HOME=/apps/cds/ext171
+EXTHOME=/apps/cds/ext171
+EDIHOME=/apps/cds/edi142
+DESIGNWARE_HOME=/apps/syn/synthesis
+DD_DONT_DO_OS_LOCKS=TRUE
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-9OktiHSluY,guid=bb7e79de6ddb8e748002eefb69dfe70d
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-9OktiHSluY,guid=bb7e79de6ddb8e748002eefb69dfe70d
+CVS_RSH=ssh
+CUSTOM_COMPILER_HOME=/apps/syn/customcompiler
+CORETOOLS_HOME=/apps/syn/coretools
+CONFRML_HOME=/apps/cds/confrml241
+COLORTERM=truecolor
+CDS_SITE=/apps/cds/IC618/local
+CDS_ROOT=/apps/cds
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=5280@licsvr.ece.ufl.edu
+CDS_INST_DIR=/apps/cds
+CDSINST=/apps/cds/IC618
+CDSHOME=/apps/cds/IC618
+CDSDIR=/apps/cds/IC618/tools/dfII
+CDS=/apps/cds/IC618
+CDK_DIR=/apps/cds/IC618/local
+CATAPULT_HOME=/apps/mgc/catapult
+CALIBRE_HOME=/apps/mgc/calibre/aoj_cal_2024.2_36.24
+ASTRO_HOME=/apps/syn/astro
+ASSURA_MASTER_KEY=
+ASSURA_HOME=/apps/cds/ASSURA41
+ASSURAHOME=/apps/cds/ASSURA41
+APOLLO_HOME=/apps/syn/apollo
+AMSHOME=/apps/cds/xcelium2309
+ALLEGROHOME=/apps/cds/spb221
+AILM_LICENSE_FILE=27000@licsvr.ece.ufl.edu
+AGILEESOFD_LICENSE_FILE=27002@licsvr.ece.ufl.edu
+0
+0
+258
+1775620624 rtl/cva6/vendor/pulp-platform/axi/include/axi/typedef.svh
+1775620624 rtl/cva6/vendor/pulp-platform/axi/include/axi/assign.svh
+1775620666 rtl/cva6/core/include/cvxif_types.svh
+1775620666 rtl/cva6/core/include/rvfi_types.svh
+1775620687 rtl/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh
+1775620691 rtl/cva6/core/cvfpu/src/common_cells/include/common_cells/registers.svh
+1776829268 /home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+1776205592 /home/UFAD/atish.maragur/FUZZER_PROJECT/tb/stubs.sv
+1775620619 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/common/local/util/sram_cache.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/load_store_unit.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/store_unit.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv
+1775620625 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/tc_pwr.sv
+1775620625 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv
+1775620625 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/isochronous_4phase_handshake.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/cc_onehot.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_xbar.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_sim_mem.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_serializer.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_mux.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_multicut.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_modify_address.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_xbar.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_to_axi.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_to_apb.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_regs.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_mux.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_mailbox.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_join.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_lite_demux.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_join.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_iw_converter.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_isolate.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_intf.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_serialize.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_remap.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_id_prepend.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_err_slv.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_upsizer.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_downsizer.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_dw_converter.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_demux.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_delayer.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cut.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc_src.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_cdc_dst.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_burst_splitter.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_atop_filter.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/zcmt_decoder.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/store_buffer.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/serdiv.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/scoreboard.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp_entry.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/pmp/src/pmp_data_if.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/perf_counters.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/mult.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/multiplier.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/macro_decoder.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/lsu_bypass.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/load_unit.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/issue_stage.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/issue_read_operands.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/instr_realign.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/id_stage.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/ras.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/instr_scan.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/instr_queue.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/frontend.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/btb.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/frontend/bht.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/fpu_wrap.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ex_stage.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/decoder.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_issue_register_commit_if_driver.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_fu.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvxif_compressed_if_driver.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_top.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_rounding.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_multifmt_slice.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_fmt_slice.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_opgroup_block.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_noncomp.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_fma.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_fma_multi.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_divsqrt_multi.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_classifier.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_cast_multi.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/unread.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sync_wedge.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sync.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/sub_per_hash.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_xbar.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_to_mem.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_register.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_omega_net.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_mux.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_join.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_intf.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fork.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fork_dynamic.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_filter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_fifo.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_demux.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_delay.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_arbiter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/stream_arbiter_flushable.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/spill_register.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/shift_reg.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/serial_deglitch.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rstgen.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rstgen_bypass.sv
+1776368980 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/rr_arb_tree.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/popcount.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/plru_tree.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/onehot_to_bin.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/mv_filter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/max_counter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lzc.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr_8bit.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/lfsr_16bit.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/isochronous_spill_register.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/id_queue.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/gray_to_binary.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/fifo_v3.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/fall_through_register.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/exp_backoff.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator_tx.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_propagator_rx.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/edge_detect.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/delta_counter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/counter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/clk_div.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_fifo_gray.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_fifo_2phase.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cdc_2phase.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cb_filter.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/cb_filter_pkg.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/binary_to_gray.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/src/addr_decode.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/fifo_v3_properties.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/fall_through_register_properties.sv
+1775620691 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/formal/counter_properties.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_tlb.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_shared_tlb.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_ptw.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_mmu/cva6_mmu.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_fifo_v3.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cva6_accel_first_pass_decoder_stub.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/csr_regfile.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/csr_buffer.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/controller.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/compressed_decoder.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/commit_stage.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_missunit.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_mem.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_dcache_ctrl.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_cache_subsystem.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/wt_axi_adapter.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/tag_cmp.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/std_nbdcache.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/std_cache_subsystem.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/miss_handler.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_resp_demux.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_l15_req_arbiter.sv
+1775757137 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/target/cva6/cva6_op_hpdcache_params_pkg.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_sel.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_random.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_plru.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_flush.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_lfsr.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_decoder.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_resize.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_1hot_to_binary.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_icache.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/cache_ctrl.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/axi_adapter.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/amo_alu.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/branch_unit.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/axi_shim.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ariane_regfile.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/ariane_regfile_ff.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/amo_buffer.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/alu.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/acc_dispatcher.sv
+1775620693 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/ecc_pkg.sv
+1775620687 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv
+1775620689 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/fpnew_pkg.sv
+1775620624 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv
+1775620620 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/std_cache_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/wt_cache_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/ariane_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/build_config_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/riscv_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv
+1775620666 /home/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/config_pkg.sv
+1776355810 sim_work/files.f
+4
+1733288192 /apps/syn/vcs/current/linux64/lib/libvirsim.so
+1733286010 /apps/syn/vcs/current/linux64/lib/liberrorinf.so
+1733286000 /apps/syn/vcs/current/linux64/lib/libsnpsmalloc.so
+1733285992 /apps/syn/vcs/current/linux64/lib/libvfs.so
+1776829352 sim_work/simv.daidir
+-1 partitionlib

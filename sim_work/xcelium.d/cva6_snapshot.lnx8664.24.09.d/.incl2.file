@@ -1,0 +1,12 @@
+rtl/cva6/core/cvfpu/src/common_cells/include/common_cells/registers.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cvfpu/src/common_cells/include/common_cells/registers.svh
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh
+rtl/cva6/core/include/rvfi_types.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/rvfi_types.svh
+rtl/cva6/core/include/cvxif_types.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/core/include/cvxif_types.svh
+rtl/cva6/vendor/pulp-platform/axi/include/axi/assign.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/include/axi/assign.svh
+rtl/cva6/vendor/pulp-platform/axi/include/axi/typedef.svh
+/ecel/UFAD/atish.maragur/FUZZER_PROJECT/rtl/cva6/vendor/pulp-platform/axi/include/axi/typedef.svh

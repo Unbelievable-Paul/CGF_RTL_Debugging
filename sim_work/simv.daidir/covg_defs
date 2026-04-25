@@ -1,0 +1,328 @@
+global coverage_group 0 0 testbench::cg_branch __coverage_cg_branch unused_cg_branch_loop_label testbench 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 55 /home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+ 266 0 0 0 0 0 0 0 0  1
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 8 cp_taken 267 0 0 0 0 0 0 33 cg_branch::testbench_cg_branch_fn 33 cg_branch::testbench_cg_branch_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 0 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 taken 267 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 35 cg_branch::testbench_cg_branch_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 not_taken 267 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 35 cg_branch::testbench_cg_branch_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 13 cp_mispredict 268 0 0 0 0 0 0 35 cg_branch::testbench_cg_branch_fn_2 35 cg_branch::testbench_cg_branch_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 0 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 7 correct 268 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 35 cg_branch::testbench_cg_branch_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 mispredict 268 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 35 cg_branch::testbench_cg_branch_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 2 cx 0 269 0 0 -1 0 0 0 0 2 0 1 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 0 testbench::cg_store_buf __coverage_cg_store_buf unused_cg_store_buf_loop_label testbench 0 1 0 0 0  ( 0 
+)
+ 0 273 0 0 0 0 0 0 0 0  1
+0
+26
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 10 cp_pending 274 0 0 0 0 0 0 39 cg_store_buf::testbench_cg_store_buf_fn 39 cg_store_buf::testbench_cg_store_buf_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 0 0 1 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 idle 274 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_store_buf::testbench_cg_store_buf_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 busy 274 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_store_buf::testbench_cg_store_buf_fn_1 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 0 testbench::cg_exception __coverage_cg_exception unused_cg_exception_loop_label testbench 0 1 0 0 0  ( 0 
+)
+ 0 278 0 0 0 0 0 0 0 0  1
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+1
+0
+ 7 cp_trap 279 0 0 0 0 0 0 39 cg_exception::testbench_cg_exception_fn 39 cg_exception::testbench_cg_exception_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 0 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 clean 279 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 trap 279 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 5 cp_op 280 0 0 0 0 0 0 41 cg_exception::testbench_cg_exception_fn_2 41 cg_exception::testbench_cg_exception_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 7 0 0 0 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 12 1 1 0 0 1 1 6 system 281 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 store 282 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 branch 283 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 alu_reg 284 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_6 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 alu_imm 285 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_7 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 load 286 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 jal 287 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_9 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 jalr 288 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_a 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 lui 289 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_b 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 auipc 290 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_c 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 fence 291 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_d 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 other 292 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+ 9 cp_funct3 294 0 0 0 0 0 0 41 cg_exception::testbench_cg_exception_fn_e 41 cg_exception::testbench_cg_exception_fn_e 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 0 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 1 1 0 0 1 1 2 f0 295 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f1 295 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_10 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f2 295 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_11 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f3 295 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_12 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f4 296 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_13 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f5 296 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_14 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f6 296 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_15 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 f7 296 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_16 0 0 0 0 0 0 0
+ 0
+
+ 5 cp_rd 298 0 0 0 0 0 0 42 cg_exception::testbench_cg_exception_fn_17 42 cg_exception::testbench_cg_exception_fn_17 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 1 1 0 0 1 1 2 r0 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 41 cg_exception::testbench_cg_exception_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r1 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_10 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r2 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_11 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r3 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_12 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r4 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_13 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r5 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_14 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r6 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_15 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 r7 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 cg_exception::testbench_cg_exception_fn_16 0 0 0 0 0 0 0
+ 0
+
+ 8 cx_op_f3 0 302 0 0 -1 0 0 0 0 2 1 2 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

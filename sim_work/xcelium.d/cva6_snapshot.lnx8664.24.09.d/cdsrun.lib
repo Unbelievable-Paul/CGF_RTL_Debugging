@@ -1,0 +1,2 @@
+SOFTINCLUDE /apps/cds/xcelium2409/tools/inca/files/cds.lib
+define worklib ../worklib

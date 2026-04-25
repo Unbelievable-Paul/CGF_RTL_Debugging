@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-f
+sim_work/files.f
+-elaborate
+-snapshot
+cva6_snapshot
+-xmlibdirname
+sim_work/xcelium.d
+-coverage
+all
+-covfile
+scripts/coverage.ccf
+-access
++rwc
+-sv
+-ALLOWREDEFINITION
+-incdir
+rtl/cva6/core/include
+-incdir
+rtl/cva6/core/cvfpu/src/common_cells/include
+-incdir
+rtl/cva6/vendor/pulp-platform/axi/include
+-incdir
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/src
+-incdir
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/include
+-incdir
+rtl/cva6/vendor/pulp-platform/common_cells/include
+-timescale
+1ns/1ps

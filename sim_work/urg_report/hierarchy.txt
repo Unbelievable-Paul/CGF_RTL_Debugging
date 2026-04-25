@@ -1,0 +1,1068 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+ 21.90  37.98  32.49   0.16   0.00  38.85 testbench 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH     
+   21.88  37.86  32.51   0.16   0.00  38.85 dut 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH                
+     13.43  31.36  12.24   0.12 --      10.00 commit_stage_i 
+     26.35  32.18  30.00   0.90 --      42.31 controller_i   
+     11.66  23.16  11.47   0.08 --      11.94 csr_regfile_i  
+     24.28  42.25  38.01   0.07   0.00  41.08 ex_stage_i     
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+       39.72  76.61  41.64   0.03 --      40.58 alu_i 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+         48.21 100.00  42.86   0.00 --      50.00 gen_bitmanip.genblk1.i_clz_32b 
+         48.21 100.00  42.86   0.00 --      50.00 gen_bitmanip.i_clz_64b         
+         50.00 100.00 --       0.00 --     --     gen_bitmanip.i_cpop_count      
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+           50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+             50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+               50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+               50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+             50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+               50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+               50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+           50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+             50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+               50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+               50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+             50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+               50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+               50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                          
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.left_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                 50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH                           
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.left_child  
+                   50.00 100.00 --       0.00 --     --     non_leaf_node.right_child 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+       21.84  52.50   9.68   0.17 --      25.00 branch_unit_i 
+       39.52  64.29  33.33   0.48 --      60.00 csr_buffer_i  
+       23.51  44.35  34.92   0.09   0.00  38.18 fpu_gen.fpu_i 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         24.00  46.11  34.92   0.09   0.00  38.89 fpu_gen.i_fpnew_bulk 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                         
+           43.31  82.77  39.27   0.07 --      51.12 gen_operation_groups[0].i_opgroup_block 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+             42.94  81.73  38.97   0.08 --      50.98 gen_parallel_slices[0].active_format.i_fmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+               42.74  81.19  38.71   0.05 --      51.01 gen_num_lanes[0].active_lane.lane_instance.i_fma 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                  
+                 43.54 100.00  30.61   0.00 --     --     i_class_inputs   
+                 22.02  33.33  33.33   0.00 --      21.43 i_fpnew_rounding 
+                 48.21 100.00  42.86   0.00 --      50.00 i_lzc            
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+             43.70  83.19  40.32   0.04 --      51.26 gen_parallel_slices[1].active_format.i_fmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+               43.57  82.73  40.24   0.02 --      51.29 gen_num_lanes[0].active_lane.lane_instance.i_fma 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                  
+                 43.54 100.00  30.61   0.00 --     --     i_class_inputs   
+                 22.02  33.33  33.33   0.00 --      21.43 i_fpnew_rounding 
+                 48.21 100.00  42.86   0.00 --      50.00 i_lzc            
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+             43.41  88.89  33.85   0.13 --      50.79 i_arbiter 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                         
+           15.39  20.44  30.94   0.08   0.00  25.47 gen_operation_groups[1].i_opgroup_block 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                   
+             14.97  20.00  30.73   0.07   0.00  24.03 gen_merged_slice.i_multifmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                                  
+               14.85  19.53  30.75   0.06   0.00  23.91 gen_num_lanes[0].active_lane.lane_instance.i_fpnew_divsqrt_multi 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+                 16.67  15.09  30.48   0.06 --      21.04 i_divsqrt_lei 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+                   11.89  16.35   8.13   0.00 --      23.08 fpu_norm_U0  
+                   11.53  10.21  27.78   0.04 --       8.08 nrbd_nrsc_U0 
+                    
+                    ----------------
+                    SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+                     11.52  10.21  27.78   0.02 --       8.08 control_U0 
+                      
+                      ----------------
+                      SCORE  LINE   COND   TOGGLE FSM    BRANCH                               
+                       25.00 --      25.00   0.00 --      50.00 genblk4[0].iteration_div_sqrt 
+                       25.00 --      25.00   0.00 --      50.00 genblk4[1].iteration_div_sqrt 
+                       25.00 --      25.00   0.00 --      50.00 genblk4[2].iteration_div_sqrt 
+                  
+                  ----------------
+                  SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+                   38.58  62.77  39.54   0.06 --      51.94 preprocess_U0 
+                    
+                    ----------------
+                    SCORE  LINE   COND   TOGGLE FSM    BRANCH        
+                     48.21 100.00  42.86   0.00 --      50.00 LOD_Ua 
+                     48.21 100.00  42.86   0.00 --      50.00 LOD_Ub 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+             43.41  88.89  33.85   0.13 --      50.79 i_arbiter 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                         
+           38.68  76.53  33.78   0.17 --      44.24 gen_operation_groups[2].i_opgroup_block 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+             37.79  75.76  33.62   0.22 --      41.56 gen_parallel_slices[0].active_format.i_fmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                      
+               36.34  74.60  30.00   0.20 --      40.58 gen_num_lanes[0].active_lane.lane_instance.i_noncomp 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+                 43.54 100.00  30.61   0.00 --     --     i_class_a 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                  
+             37.77  75.76  33.62   0.14 --      41.56 gen_parallel_slices[1].active_format.i_fmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                      
+               36.32  74.60  30.00   0.11 --      40.58 gen_num_lanes[0].active_lane.lane_instance.i_noncomp 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+                 43.54 100.00  30.61   0.00 --     --     i_class_a 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+             43.41  88.89  33.85   0.13 --      50.79 i_arbiter 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                         
+           44.75  87.50  39.36   0.06 --      52.08 gen_operation_groups[3].i_opgroup_block 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                   
+             45.00  87.45  40.19   0.04 --      52.34 gen_merged_slice.i_multifmt_slice 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                               
+               45.27  87.68  40.56   0.03 --      52.82 gen_num_lanes[0].active_lane.lane_instance.i_fpnew_cast_multi 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                     
+                 43.54 100.00  30.61   0.00 --     --     fmt_init_inputs[0].active_format.i_fpnew_classifier 
+                 43.54 100.00  30.61   0.00 --     --     fmt_init_inputs[1].active_format.i_fpnew_classifier 
+                 22.02  33.33  33.33   0.00 --      21.43 i_fpnew_rounding                                    
+                 48.21 100.00  42.86   0.00 --      50.00 i_lzc                                               
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+             43.80  88.89  35.38   0.13 --      50.79 i_arbiter 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+               48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+           44.08  88.89  36.07   0.22 --      51.16 i_arbiter 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+       44.73 100.00  28.57   0.33 --      50.00 gen_cvxif.cvxif_fu_i 
+       30.68  64.35  40.53   0.14   0.00  48.40 i_mult               
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+         30.81  64.06  41.52   0.05   0.00  48.40 i_div 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH         
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_a 
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_b 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+         40.97  76.47  40.00   0.35 --      47.06 i_multiplier 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+       23.23  33.96  39.59   0.05   0.00  42.54 lsu_i 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                    
+         21.69  30.74  37.46   0.03   0.00  40.23 gen_mmu.i_cva6_mmu 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH        
+           43.88  40.19  35.29   0.02 --     100.00 i_dtlb 
+           43.88  40.19  35.29   0.02 --     100.00 i_itlb 
+           22.18  28.27  40.15   0.01   0.00  42.49 i_ptw  
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+             28.34  26.59  41.60   0.00 --      45.17 i_pmp_ptw 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[0].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[1].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[2].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[3].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[4].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[5].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[6].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+               27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[7].i_pmp_entry 
+                
+                ----------------
+                SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+                 48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+           25.69  44.78  14.58   0.16 --      43.24 i_shared_tlb 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH        
+             58.12 100.00  50.00   7.50 --      75.00 i_lfsr 
+             48.21 100.00  42.86   0.00 --      50.00 i_lzc  
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH             
+         16.50  35.71  23.61   0.11   0.00  23.08 i_load_unit 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                         
+           48.21 100.00  42.86   0.00 --      50.00 ldbuf_free_index_multi_gen.lzc_windex_i 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                  
+         66.76 100.00 --       0.28 --     100.00 i_pipe_reg_load  
+          0.28 --     --       0.28 --     --     i_pipe_reg_store 
+         30.55  34.97  41.65   0.01 --      45.59 i_pmp_data_if    
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+           28.37  26.59  41.63   0.00 --      45.27 i_pmp_data 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[0].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[1].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[2].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[3].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[4].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[5].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[6].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             27.51  23.33  41.59   0.00 --      45.11 gen_pmp.genblk1[7].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH          
+           31.31  37.70  41.63   0.00 --      45.92 i_pmp_if 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[0].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[1].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[2].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[3].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[4].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[5].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[6].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+             31.03  36.67  41.59   0.00 --      45.86 gen_pmp.genblk1[7].i_pmp_entry 
+              
+              ----------------
+              SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+               48.27 100.00  43.10   0.00 --      50.00 i_lzc 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+         20.94  45.75  28.00   0.32   0.00  30.63 i_store_unit 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+           20.79  36.14  16.22   0.37 --      30.43 genblk1.i_amo_buffer 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+             20.87  36.14  16.67   0.24 --      30.43 i_amo_fifo 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                
+           44.01  61.43  55.56   0.24 --      58.82 store_buffer_i 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+         41.89  63.16  40.00   0.13 --      64.29 lsu_bypass_i 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+     23.66  46.69  33.17   0.48   0.00  37.95 gen_cache_wt.i_cache_subsystem 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+       18.58  39.72  23.27   0.17   0.00  29.72 i_adapter 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                    
+         16.16  23.44  40.00   0.12   0.00  17.24 i_axi_shim         
+         23.09  36.14  24.32   1.47 --      30.43 i_b_fifo           
+         20.83  36.14  16.67   0.07 --      30.43 i_dcache_data_fifo 
+         20.87  36.14  16.67   0.24 --      30.43 i_icache_data_fifo 
+         21.44  36.14  16.67   2.50 --      30.43 i_rd_dcache_id     
+         21.44  36.14  16.67   2.50 --      30.43 i_rd_icache_id     
+         43.96  84.21  33.96   2.50 --      55.17 i_rr_arb_tree      
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+           48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+           48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                
+         21.44  36.14  16.67   2.50 --      30.43 i_wr_dcache_id 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+       20.88  52.29  22.86   1.09   0.00  28.16 i_cva6_icache 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                       
+         16.76  16.67 --       0.28 --      33.33 gen_sram[0].data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           16.76  16.67 --       0.28 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         46.27 100.00 --       5.48 --      33.33 gen_sram[0].tag_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                       
+         16.76  16.67 --       0.28 --      33.33 gen_sram[1].data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           16.76  16.67 --       0.28 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         46.27 100.00 --       5.48 --      33.33 gen_sram[1].tag_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                       
+         16.76  16.67 --       0.28 --      33.33 gen_sram[2].data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           16.76  16.67 --       0.28 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         46.27 100.00 --       5.48 --      33.33 gen_sram[2].tag_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                       
+         16.76  16.67 --       0.28 --      33.33 gen_sram[3].data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           16.76  16.67 --       0.28 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         46.27 100.00 --       5.48 --      33.33 gen_sram[3].tag_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH           
+         58.04 100.00  50.00   7.14 --      75.00 i_lfsr    
+         28.57 100.00  14.29   0.00 --       0.00 i_lzc     
+         28.57 100.00  14.29   0.00 --       0.00 i_lzc_hit 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH             
+       26.41  53.40  35.43   0.47   0.00  42.73 i_wt_dcache 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                                          
+         17.00  35.90  23.33   0.17   0.00  25.58 gen_rd_ports[0].genblk1.i_wt_dcache_ctrl 
+         17.00  35.90  23.33   0.17   0.00  25.58 gen_rd_ports[1].genblk1.i_wt_dcache_ctrl 
+         42.19  88.18  34.00   0.81 --      45.79 i_wt_dcache_mem                          
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                               
+           38.98  83.33 --       0.28 --      33.33 gen_data_banks[0].i_data_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             38.98  83.33 --       0.28 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                               
+           38.98  83.33 --       0.28 --      33.33 gen_data_banks[1].i_data_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             38.98  83.33 --       0.28 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[0].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[1].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[2].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[3].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[4].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[5].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[6].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                             
+           46.27 100.00 --       5.48 --      33.33 gen_tag_srams[7].i_tag_sram 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+             46.28 100.00 --       5.50 --      33.33 genblk1.data_sram 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                   
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_rd_hit      
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_wbuffer_hit 
+           43.58  88.89  33.08   1.19 --      51.16 i_rr_arb_tree     
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                      
+         24.47  50.00  36.13   0.65   0.00  35.58 i_wt_dcache_missunit 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+           44.23 100.00  30.00   1.47 --      45.45 i_exp_backoff 
+           57.95 100.00  50.00   6.82 --      75.00 i_lfsr_inv    
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_inv     
+           48.21 100.00  42.86   0.00 --      50.00 i_lzc_reqs    
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                     
+         33.95  51.23  36.79   0.18 --      47.58 i_wt_dcache_wbuffer 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+           43.18  88.89  33.22   0.04 --      50.57 i_clean_rr 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+           42.29  84.21  33.33   0.04 --      51.58 i_dirty_rr 
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH                
+           48.21 100.00  42.86   0.00 --      50.00 i_hit_lzc      
+           21.44  36.14  16.67   2.50 --      30.43 i_rtrn_id_fifo 
+           44.98  84.21  37.78   3.03 --      54.90 i_tx_id_rr     
+            
+            ----------------
+            SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                 
+             50.60 100.00  52.38   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower 
+             48.21 100.00  42.86   0.00 --      50.00 gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper 
+          
+          ----------------
+          SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+           48.21 100.00  42.86   0.00 --      50.00 i_vld_bdirty 
+           48.21 100.00  42.86   0.00 --      50.00 i_vld_lzc    
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH                                  
+     21.96  45.88  20.83   0.09 --      21.05 gen_perf_counter.perf_counters_i 
+      0.00 --     --       0.00 --     --     i_cva6_rvfi_probes               
+     27.22  45.95  26.07   0.08 --      36.78 i_frontend                       
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH               
+       24.47  39.13  28.57   0.16 --      30.00 bht_gen.i_bht 
+       37.93  58.33  33.33   0.03 --      60.00 btb_gen.i_btb 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH          
+          0.00 --     --       0.00 --     --     i_unread 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH                                
+       43.33 100.00  33.33   0.00 --      40.00 gen_instr_scan[0].i_instr_scan 
+       43.33 100.00  33.33   0.00 --      40.00 gen_instr_scan[1].i_instr_scan 
+       24.28  42.72  22.22   0.08 --      32.08 i_instr_queue                  
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                        
+         20.83  36.14  16.67   0.06 --      30.43 gen_instr_fifo[0].i_fifo_instr_data                    
+         20.83  36.14  16.67   0.06 --      30.43 gen_instr_fifo[1].i_fifo_instr_data                    
+         48.21 100.00  42.86   0.00 --      50.00 gen_multiple_instr_per_fetch_with_C.i_lzc_branch_index 
+         50.00 100.00 --       0.00 --     --     gen_multiple_instr_per_fetch_with_C.i_popcount         
+         20.87  36.14  16.67   0.23 --      30.43 i_fifo_address                                         
+          0.00 --     --       0.00 --     --     i_unread_branch_mask                                   
+          0.00 --     --       0.00 --     --     i_unread_fifo_pos                                      
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH                 
+       35.50  63.89  33.33   0.33 --      44.44 i_instr_realign 
+       26.21  44.44   0.00   0.38 --      60.00 ras_gen.i_ras   
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH            
+      4.53  10.56   2.78   0.05 --       4.73 id_stage_i 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                
+        3.80   8.70   4.17   0.00 --       2.33 genblk1.genblk1[0].compressed_decoder_i        
+       29.53  84.21   0.00   0.60 --      33.33 genblk1.genblk6.i_cvxif_compressed_if_driver_i 
+        3.31   7.93   1.80   0.00 --       3.52 genblk2[0].decoder_i                           
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH                
+      0.48 --     --       0.48 --     --     instr_tracer_i 
+     31.44  50.79  25.87   0.20 --      48.90 issue_stage_i  
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH                       
+       31.52  50.96  25.87   0.34 --      48.91 i_issue_read_operands 
+        
+        ----------------
+        SCORE  LINE   COND   TOGGLE FSM    BRANCH                                                           
+         61.56  84.62 --       0.06 --     100.00 float_regfile_gen.gen_asic_fp_regfile.i_ariane_fp_regfile 
+         64.12  92.31 --       0.06 --     100.00 gen_asic_regfile.i_ariane_regfile                         
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[0].genblk1.i_sel_fpr_clobbers            
+         25.64 --      25.94   0.98 --      50.00 gen_sel_clobbers[0].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[10].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[10].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[11].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[11].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[12].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[12].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[13].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[13].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[14].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[14].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[15].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[15].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[16].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[16].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[17].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[17].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[18].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[18].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[19].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[19].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[1].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[1].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[20].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[20].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[21].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[21].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[22].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[22].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[23].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[23].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[24].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[24].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[25].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[25].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[26].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[26].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[27].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[27].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[28].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[28].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[29].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[29].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[2].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[2].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[30].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[30].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[31].genblk1.i_sel_fpr_clobbers           
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[31].i_sel_gpr_clobbers                   
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[3].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[3].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[4].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[4].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[5].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[5].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[6].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[6].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[7].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[7].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[8].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[8].i_sel_gpr_clobbers                    
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[9].genblk1.i_sel_fpr_clobbers            
+         25.80 --      26.42   0.98 --      50.00 gen_sel_clobbers[9].i_sel_gpr_clobbers                    
+         17.99 --      16.40   0.07 --      37.50 genblk5[0].i_sel_rs1                                      
+         17.99 --      16.40   0.07 --      37.50 genblk5[0].i_sel_rs2                                      
+         17.99 --      16.40   0.07 --      37.50 genblk5[0].i_sel_rs3                                      
+         38.97 100.00  16.67   0.25 --     --     i_cvxif_issue_register_commit_if_driver                   
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH              
+       30.88  50.00  26.83   0.02 --      46.67 i_scoreboard 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH       
+   18.35  42.22   0.00   0.40 --      30.77 i_mem 
+

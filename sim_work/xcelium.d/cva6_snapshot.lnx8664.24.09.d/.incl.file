@@ -1,0 +1,15 @@
+./common_cells/registers.svh
+rtl/cva6/core/include/common_cells/registers.svh
+./hpdcache_typedef.svh
+rtl/cva6/core/include/hpdcache_typedef.svh
+rtl/cva6/core/cvfpu/src/common_cells/include/hpdcache_typedef.svh
+rtl/cva6/vendor/pulp-platform/axi/include/hpdcache_typedef.svh
+rtl/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_typedef.svh
+./rvfi_types.svh
+./cvxif_types.svh
+./axi/assign.svh
+rtl/cva6/core/include/axi/assign.svh
+rtl/cva6/core/cvfpu/src/common_cells/include/axi/assign.svh
+./axi/typedef.svh
+rtl/cva6/core/include/axi/typedef.svh
+rtl/cva6/core/cvfpu/src/common_cells/include/axi/typedef.svh

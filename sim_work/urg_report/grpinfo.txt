@@ -1,0 +1,386 @@
+Group : testbench::cg_exception
+
+===============================================================================
+Group : testbench::cg_exception
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 80.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   testbench::cg_exception
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 29       4         25      89.20   
+Crosses   88       50        38      43.18   
+
+
+Variables for Group  testbench::cg_exception
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_trap   2        0         2       100.00  100  1      1        0                    
+cp_op     11       2         9       81.82   100  1      1        0                    
+cp_funct3 8        0         8       100.00  100  1      1        0                    
+cp_rd     8        2         6       75.00   100  1      1        0                    
+
+
+Crosses for Group  testbench::cg_exception
+
+
+CROSS    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_op_f3 88       50        38      43.18   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_trap
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_trap
+
+
+Bins
+
+NAME  COUNT  AT LEAST 
+trap  67490  1        
+clean 605981 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_op
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 11       2         9       81.82   
+
+
+User Defined Bins for cp_op
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST NUMBER 
+jalr 0     1        1      
+jal  0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME  COUNT STATUS   
+other 592   Excluded 
+
+
+Covered bins
+
+NAME    COUNT  AT LEAST 
+fence   5      1        
+auipc   2      1        
+lui     19974  1        
+load    48     1        
+alu_imm 62851  1        
+alu_reg 311191 1        
+branch  37379  1        
+store   86482  1        
+system  154947 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_funct3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_funct3
+
+
+Bins
+
+NAME COUNT  AT LEAST 
+f7   62478  1        
+f6   47905  1        
+f5   18776  1        
+f4   40717  1        
+f3   116379 1        
+f2   72034  1        
+f1   41393  1        
+f0   273222 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rd
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        2         6       75.00   
+
+
+User Defined Bins for cp_rd
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST NUMBER 
+r7   0     1        1      
+r5   0     1        1      
+
+
+Covered bins
+
+NAME COUNT  AT LEAST 
+r6   6130   1        
+r4   24624  1        
+r3   171    1        
+r2   143493 1        
+r1   134235 1        
+r0   364251 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_f3
+
+
+Samples crossed: cp_op cp_funct3
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 88       50        38      43.18   50      
+
+
+Automatically Generated Cross Bins for cx_op_f3
+
+
+Element holes
+
+cp_op        cp_funct3 COUNT AT LEAST NUMBER 
+[jalr , jal] *         --    --       16     
+
+
+Uncovered bins
+
+cp_op    cp_funct3                          COUNT AT LEAST NUMBER 
+[fence]  [f7 , f6 , f5 , f4 , f3 , f2 , f1] --    --       7      
+[auipc]  [f7 , f6 , f5]                     --    --       3      
+[auipc]  [f3 , f2 , f1 , f0]                --    --       4      
+[lui]    [f7 , f6]                          --    --       2      
+[load]   [f7 , f6 , f5]                     --    --       3      
+[load]   [f1]                               0     1        1      
+[branch] [f7]                               0     1        1      
+[branch] [f5]                               0     1        1      
+[branch] [f3]                               0     1        1      
+[store]  [f7 , f6 , f5 , f4]                --    --       4      
+[system] [f7 , f6 , f5 , f4 , f3 , f2 , f1] --    --       7      
+
+
+Covered bins
+
+cp_op   cp_funct3 COUNT  AT LEAST 
+fence   f0        5      1        
+auipc   f4        2      1        
+lui     f5        2      1        
+lui     f4        2      1        
+lui     f3        19964  1        
+lui     f2        2      1        
+lui     f1        2      1        
+lui     f0        2      1        
+load    f4        2      1        
+load    f3        3      1        
+load    f2        23     1        
+load    f0        20     1        
+alu_imm f7        320    1        
+alu_imm f6        308    1        
+alu_imm f5        326    1        
+alu_imm f4        372    1        
+alu_imm f3        332    1        
+alu_imm f2        376    1        
+alu_imm f1        327    1        
+alu_imm f0        60490  1        
+alu_reg f7        62158  1        
+alu_reg f6        47579  1        
+alu_reg f5        18448  1        
+alu_reg f4        33845  1        
+alu_reg f3        32964  1        
+alu_reg f2        61575  1        
+alu_reg f1        32743  1        
+alu_reg f0        21879  1        
+branch  f6        18     1        
+branch  f4        6494   1        
+branch  f2        6      1        
+branch  f1        8319   1        
+branch  f0        22542  1        
+store   f3        63116  1        
+store   f2        10052  1        
+store   f1        2      1        
+store   f0        13312  1        
+system  f0        154947 1        
+
+
+Group : testbench::cg_branch
+
+===============================================================================
+Group : testbench::cg_branch
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   testbench::cg_branch
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+Crosses   4        0         4       100.00  
+
+
+Variables for Group  testbench::cg_branch
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_taken      2        0         2       100.00  100  1      1        0                    
+cp_mispredict 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  testbench::cg_branch
+
+
+CROSS EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx    4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_taken
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_taken
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+not_taken 6912  1        
+taken     38203 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_mispredict
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_mispredict
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+mispredict 8231  1        
+correct    36884 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx
+
+
+Samples crossed: cp_taken cp_mispredict
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx
+
+
+Bins
+
+cp_taken  cp_mispredict COUNT AT LEAST 
+not_taken mispredict    802   1        
+not_taken correct       6110  1        
+taken     mispredict    7429  1        
+taken     correct       30774 1        
+
+
+Group : testbench::cg_store_buf
+
+===============================================================================
+Group : testbench::cg_store_buf
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/UFAD/atish.maragur/FUZZER_PROJECT/tb/testbench.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   testbench::cg_store_buf
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  testbench::cg_store_buf
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_pending 2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pending
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pending
+
+
+Bins
+
+NAME COUNT    AT LEAST 
+busy 479859   1        
+idle 16527488 1        
+
+

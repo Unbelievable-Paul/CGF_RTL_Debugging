@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(14Apr2026:18:26:53):( xrun -f sim_work/files.f -elaborate -snapshot cva6_snapshot -xmlibdirname sim_work/xcelium.d -coverage all -covfile scripts/coverage.ccf -access +rwc -sv -ALLOWREDEFINITION -incdir rtl/cva6/core/include -incdir rtl/cva6/core/cvfpu/src/common_cells/include -incdir rtl/cva6/vendor/pulp-platform/axi/include -incdir rtl/cva6/core/cache_subsystem/hpdcache/rtl/src -incdir rtl/cva6/core/cache_subsystem/hpdcache/rtl/include -incdir rtl/cva6/vendor/pulp-platform/common_cells/include -timescale 1ns/1ps )&&(sim_work/xcelium.d/env.d/env.history.14Apr2026_18_26_53)
