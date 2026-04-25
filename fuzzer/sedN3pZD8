@@ -1,0 +1,92 @@
+#!/usr/bin/env python
+import random
+OP_ALU_REG=0x33;OP_ALU_IMM=0x13;OP_LOAD=0x03;OP_STORE=0x23
+OP_BRANCH=0x63;OP_JAL=0x6F;OP_JALR=0x67;OP_LUI=0x37
+OP_AUIPC=0x17;OP_SYSTEM=0x73;OP_FENCE=0x0F
+def _addi(rd,rs1,imm): return (imm&0xFFF)<<20|(rs1&0x1F)<<15|(rd&0x1F)<<7|OP_ALU_IMM
+def _alu_imm(rd,rs1,imm,f3): return (imm&0xFFF)<<20|(rs1&0x1F)<<15|(f3&7)<<12|(rd&0x1F)<<7|OP_ALU_IMM
+def _alu_reg(rd,rs1,rs2,f3,f7=0): return (f7&0x7F)<<25|(rs2&0x1F)<<20|(rs1&0x1F)<<15|(f3&7)<<12|(rd&0x1F)<<7|OP_ALU_REG
+def _load(rd,rs1,imm,f3): return (imm&0xFFF)<<20|(rs1&0x1F)<<15|(f3&7)<<12|(rd&0x1F)<<7|OP_LOAD
+def _store(rs1,rs2,imm,f3): return ((imm>>5)&0x7F)<<25|(rs2&0x1F)<<20|(rs1&0x1F)<<15|(f3&7)<<12|(imm&0x1F)<<7|OP_STORE
+def _branch(rs1,rs2,imm,f3):
+    imm=imm&0x1FFE
+    return ((imm>>12)&1)<<31|((imm>>5)&0x3F)<<25|(rs2&0x1F)<<20|(rs1&0x1F)<<15|(f3&7)<<12|((imm>>1)&0xF)<<8|((imm>>11)&1)<<7|OP_BRANCH
+def _lui(rd,imm): return ((imm&0xFFFFF)<<12)|(rd&0x1F)<<7|OP_LUI
+def _auipc(rd,imm): return ((imm&0xFFFFF)<<12)|(rd&0x1F)<<7|OP_AUIPC
+def _jalr(rd,rs1,imm): return (imm&0xFFF)<<20|(rs1&0x1F)<<15|(rd&0x1F)<<7|OP_JALR
+def _system(imm12): return (imm12&0xFFF)<<20|OP_SYSTEM
+def _fence(): return 0x0FF0000F
+def _nop(): return 0x00000013
+CI_BLOCK=[_addi(1,0,1),_addi(2,0,2),_addi(3,0,3),_addi(4,0,4),_addi(5,0,5),_addi(6,0,6),_addi(7,0,7),_addi(8,0,8),_addi(9,0,9),_addi(10,0,10),_lui(16,0),_addi(16,16,0x400)]
+BF3=[0x0,0x1,0x4,0x5,0x6,0x7]
+
+def strategy_always_taken_branch(n=511):
+    out=list(CI_BLOCK)
+    while len(out)<n:
+        r=len(out)%4
+        if r==0: out.append(_branch(1,1,8,0x0))
+        elif r==1: out.append(_nop())
+        elif r==2: out.append(_addi(random.randint(1,15),random.randint(1,10),random.randint(1,31)))
+        else: out.append(_alu_reg(random.randint(1,15),random.randint(1,10),random.randint(1,10),random.randint(0,7)))
+    return out[:n]
+def strategy_always_not_taken(n=511):
+    out=list(CI_BLOCK)
+    while len(out)<n:
+        r=len(out)%3
+        if r==0: out.append(_branch(1,1,8,0x1))
+        elif r==1: out.append(_alu_imm(random.randint(1,10),random.randint(1,10),random.randint(0,31),random.randint(0,7)))
+        else: out.append(_nop())
+    return out[:n]
+def strategy_data_dependent_branch(n=511):
+    out=list(CI_BLOCK);k=1
+    while len(out)<n:
+        r=len(out)%8
+        if r==0: out.append(_addi(3,0,k&0xFFF))
+        elif r==1: out.append(_addi(4,0,k&0xFFF))
+        elif r==2: out.append(_branch(3,4,8,0x0))
+        elif r==3: out.append(_nop())
+        elif r==4: out.append(_addi(3,0,(k+1)&0xFFF))
+        elif r==5: out.append(_addi(4,0,k&0xFFF))
+        elif r==6: out.append(_branch(3,4,8,0x1))
+        else: k=(k+7)%511+1;out.append(_nop())
+    return out[:n]
+def strategy_mispredict_force(n=511):
+    out=list(CI_BLOCK);count=0
+    while len(out)<n:
+        sub=count%24
+        if sub<20: out.append(_branch(1,1,8,0x0));out.append(_nop())
+        else: out.append(_branch(1,1,8,0x1));out.append(_nop())
+        out.append(_addi(random.randint(1,10),random.randint(1,10),random.randint(0,15)))
+def strategy_deliberate_ecall(n=511):
+    out=list(CI_BLOCK)
+    while len(out)<n:
+        r=len(out)%8
+        if r==4: out.append(_system(0))
+        elif r==6: out.append(_system(1))
+        else: out.append(_alu_reg(random.randint(1,10),random.randint(1,10),random.randint(1,10),random.randint(0,7)))
+    return out[:n]
+        count+=1
+    return out[:n]
+def strategy_store_buffer_fill(n=511):
+    return out[:n]
+        if r==4: out.append(_system(0))
+    return out[:n]
+def strategy_random_mix(n=511):
+    out=list(CI_BLOCK)
+    return out[:n]
+        r=len(out)%9
+        if r<4: out.append(_store(1,(r%9)+1,offsets[r],0x3))
+    return out[:n]
+def strategy_ecall_with_branches(n=511):
+        elif r==4: out.append(_addi(random.randint(1,10),0,random.randint(1,31)))
+        elif r<8: out.append(_store(1,(r%9)+1,(r%8)*8,0x3))
+    out=list(CI_BLOCK)
+        r=len(out)%12
+        elif r==5: out.append(_branch(1,1,8,0x0))
+        elif r==7: out.append(_branch(1,1,8,0x0))
+        elif r==8: out.append(_nop())
+    while len(out)<n: out.append(fns[idx%len(fns)](idx));idx+=1
+    return out[:n]
+    return out[:n]
+def strategy_full_sweep(n=511):
+    while len(out)<n:
