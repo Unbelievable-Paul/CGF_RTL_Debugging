@@ -198,3 +198,31 @@ Three SystemVerilog covergroups defined in `tb/testbench.sv`:
 ## License
 
 This project is for academic purposes (EEE6323, University of Florida). CVA6 RTL is licensed separately under Apache 2.0 / Solderpad Hardware License v2.1 by OpenHW Group.
+
+## Coverage Progression Plots
+
+**Three-phase best-so-far comparison** — Phase 1 (AFL) climbs fastest early, Phase 2 (convergence) overtakes via simulated annealing, Phase 3 (genetic) stabilizes at a lower per-iteration peak but still contributes to cumulative coverage:
+
+![Three-Phase Comparison](results/three_phase_comparison.png)
+
+**Phase 2 vs Phase 3 zoomed view** — convergence (blue) edges out the genetic algorithm (orange) on per-iteration peak fitness, though both plateau after ~700 iterations:
+
+![Phase 2 vs Phase 3](results/phase2_vs_phase3.png)
+
+**Final result comparison** — per-iteration peak vs cumulative VDB-merged coverage for each phase. The ~6 percentage-point gap between peak and cumulative for both Phase 2 and Phase 3 confirms that no single test program covers everything — coverage closure requires the union across all iterations:
+
+![Final Results](results/final_result_bars.png)
+
+## Coverage Progression Plots
+
+**Three-phase best-so-far comparison** — Phase 1 (AFL) climbs fastest early, Phase 2 (convergence) overtakes via simulated annealing, Phase 3 (genetic) stabilizes at a lower per-iteration peak but still contributes to cumulative coverage:
+
+![Three-Phase Comparison](results/three_phase_comparison.png)
+
+**Phase 2 vs Phase 3 zoomed view** — convergence (blue) edges out the genetic algorithm (orange) on per-iteration peak fitness, though both plateau after ~700 iterations:
+
+![Phase 2 vs Phase 3](results/phase2_vs_phase3.png)
+
+**Final result comparison** — per-iteration peak vs cumulative VDB-merged coverage for each phase. The ~6 percentage-point gap between peak and cumulative for both Phase 2 and Phase 3 confirms that no single test program covers everything — coverage closure requires the union across all iterations:
+
+![Final Results](results/final_result_bars.png)
